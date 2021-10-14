@@ -12,15 +12,23 @@
   3. 설문을 완료한 유저의 Feature와 가장 유사한 5개의 도장을 추려내어 랜덤으로 하나를 반환하거나, 제일 비슷한 한개의 도장을 반환한다.
 
 ### Feature 
+
   ![stamps](https://user-images.githubusercontent.com/44831709/137267422-517ade9a-0c18-4675-bfd3-28c135cced0c.png)
+  
   위와 같은 도장들을 개발자 주관으로 지도학습(Supervised Learning)을 시킵니다. Feature로 정의될 항목은 다음과 같습니다.
   
   나이, 종교, 띠, 도장의 밝기, 별자리, 디자인, 가격, 글자 새김, 재료, 동양/서양풍, 성별
 
 ### 설문의 선지 
+
   ![survey](https://user-images.githubusercontent.com/44831709/137267744-1fd05abc-72e5-4213-be43-01d7fee2319e.png)
+  
   위와 같은 형식으로 설문에 참가하는 유저들에게 정보를 가져옵니다. 
 
 ### K-NN과 유사도 검사 
+
   ![vector](https://user-images.githubusercontent.com/44831709/137268037-3302ec68-6dce-45ba-ae8c-0fe071a4d87a.png)
   
+  설문에 참여한 유저는 위에서 정의한 Feature들을 바탕으로 하나의 벡터로 간주합니다. K-NN 기반으로 이러한 Feature들을 바탕으로 유저와 가장 유사한 5개의 도장을 선택합니다. 
+  
+  여기서 유사도 검사는 Euclidean distance와 Cosine-Similarity 를 사용했습니다. 
