@@ -1,0 +1,17 @@
+<form method ='POST'>
+{% for question in questions %}
+<p> Q{{loop.index}}.  {{question}} </p>
+<label for="cars">Choose a {{question}}:</label>
+<select name="{{question}}">
+		{% for answer in answers[loop.index-1] %}
+			<option value="{{answer}}">{{answer}}</option>
+		  {% endfor %}
+		</select>
+		<br>
+		<br>
+		<br>
+    {% endfor %}
+    <br>
+    <input type='submit'>
+
+</form>
