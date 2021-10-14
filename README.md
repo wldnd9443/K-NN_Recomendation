@@ -22,7 +22,8 @@
 ### 설문의 선지 
 
   ![survey](https://user-images.githubusercontent.com/44831709/137267744-1fd05abc-72e5-4213-be43-01d7fee2319e.png)
-  
+  ![survey2](https://user-images.githubusercontent.com/44831709/137281576-230b9a04-5b50-48af-883b-d2ac9ac2d060.png)
+
   위와 같은 형식으로 설문에 참가하는 유저들에게 정보를 가져옵니다. 
 
 ### K-NN과 유사도 검사 
